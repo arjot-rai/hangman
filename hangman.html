@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Hangman
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    </head>
+    <body>
+        <div class="body-items">
+            <h1>Hangman</h1>
+            <div class=container>
+                <svg height="300" width="400">
+                    <line x1="100" y1="0" x2="100" y2="300"/>
+                    <line x1="100" y1="0" x2="200" y2="0"/>
+                    <line x1="200" y1="0" x2="200" y2="50"/>
+                    <line x1="75" y1="300" x2="125" y2="300"/>
+                    <circle class="head" cx="200" cy="80" r="30" fill=tan style="display:none;"/>
+                    <line class="body-hang" x1="200" y1="110" x2="200" y2="180" style="display: none;"/>
+                    <line class="arm-1" x1="200" y1="130" x2="180" y2="180" style="display: none;"/>
+                    <line class="arm-2" x1="200" y1="130" x2="220" y2="180" style="display: none;"/>
+                    <line class="leg-1" x1="200" y1="180" x2="180" y2="230" style="display: none;"/>
+                    <line class="leg-2" x1="200" y1="180" x2="220" y2="230" style="display: none;"/>
+                </svg>
+            </div>
+            <div class="output">
+            </div>
+            <div class="alpha">
+                <ul id="keyboard">
+                    <li class="letter">A</li>
+                    <li class="letter">B</li>
+                    <li class="letter">C</li>
+                    <li class="letter">D</li>
+                    <li class="letter">E</li>
+                    <li class="letter">F</li>
+                    <li class="letter">G</li>
+                    <li class="letter">H</li>
+                    <li class="letter">I</li>
+                    <li class="letter">J</li>
+                    <li class="letter">K</li>
+                    <li class="letter">L</li>
+                    <li class="letter">M</li>
+                    <li class="letter">N</li>
+                    <li class="letter">O</li>
+                    <li class="letter">P</li>
+                    <li class="letter">Q</li>
+                    <li class="letter">R</li>
+                    <li class="letter">S</li>
+                    <li class="letter">T</li>
+                    <li class="letter">U</li>
+                    <li class="letter">V</li>
+                    <li class="letter">W</li>
+                    <li class="letter">X</li>
+                    <li class="letter">Y</li>
+                    <li class="letter">Z</li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <button class="start-over">Start Over</button>
+                <button class="new-start">New Word</button>           
+                <button class="solve">Solve</button> 
+            </div>
+
+
+            <script src="script.js"></script>
+        </div>
+    </body>
+
+</html>

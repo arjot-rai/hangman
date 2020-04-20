@@ -1,0 +1,123 @@
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+    background-color: lightslategrey;
+  }
+  
+  * *::after, *::before{
+    box-sizing: inherit;
+  }
+  
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: lightslategray;
+}
+
+.body-items{
+    /* max-width: 800px; */
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+h1{
+    text-align: center;
+}
+
+        
+/* ----------------------Container----------------*/
+.container{
+    stroke:black;
+    stroke-width: 2;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0 5% 5% 5%;
+}
+
+svg{
+    display: block;
+    margin: auto;
+}
+
+
+
+/* ----------------------Output--------------------*/
+
+.output{
+    text-align: center;
+    margin-top: 1%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* ----------------------Buttons-------------------*/
+.alpha {
+    margin: auto;
+    width: 688px;
+    padding-bottom: 2%;
+    }
+    #keyboard {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    #keyboard li {
+    padding: 5px 5px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: lightslategray;
+    border: 1px solid black;
+    /* -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; */
+    }
+    #keyboard li:hover{
+        cursor: pointer;
+        background-color: darkgray;
+    }
+
+.buttons{
+    /* width: 30%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-bottom: 3%;
+}
+.buttons button{
+    width: 100px;
+    background-color: lightslategray;
+}
+
+.buttons button:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+@media screen and (max-width: 749px) {
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .buttons button{
+        margin: auto 1px;
+        flex-wrap: wrap;
+ 
+    }
+    .alpha{
+        width: 350px;
+        justify-content: space-around;
+
+    }
+}
